@@ -2,13 +2,13 @@ import { Route, Routes } from "react-router-dom";
 import "./css/App.css";
 import Home from "./pages/Home";
 import Favorite from "./pages/Favorites";
-import NavBar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import { MovieProvider } from "./contexts/MovieContext";
 
 function App() {
   return (
     <MovieProvider>
-      <NavBar />
+      <Navbar />
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
